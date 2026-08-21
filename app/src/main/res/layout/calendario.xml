@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="20dp">
+
+        <!-- ENCABEZADO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnAtras"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_arrow_back"
+                android:contentDescription="Atrás"
+                android:padding="3dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Menú del mes"
+                android:textColor="#222222"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btnCalendario"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_calendar"
+                android:contentDescription="Calendario"
+                android:padding="2dp" />
+
+        </LinearLayout>
+
+
+        <!-- MES -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/btnMesAnterior"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#222222"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Mayo 2025"
+                android:textColor="#222222"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/btnMesSiguiente"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="›"
+                android:textColor="#222222"
+                android:textSize="25sp" />
+
+        </LinearLayout>
+
+
+        <!-- DÍAS DE LA SEMANA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:textStyle="bold">
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="LUN"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="MAR"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="MIÉ"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="JUE"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="VIE"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="SÁB"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/DiaCalendario"
+                android:text="DOM"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- SEMANA 1 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="28"
+                android:textColor="#BBBBBB"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="29"
+                android:textColor="#BBBBBB"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="30"
+                android:textColor="#BBBBBB"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="1"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="2"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="3"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="4"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- SEMANA 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="5"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendarioSeleccionado"
+                android:text="6"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="7"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="8"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="9"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="10"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="11"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- SEMANA 3 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="12"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="13"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="14"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="15"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="16"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="17"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="18"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- SEMANA 4 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="19"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="20"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="21"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="22"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="23"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="24"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="25"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+
+
+        <!-- SEMANA 5 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:orientation="horizontal"
+            android:textStyle="bold">
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="26"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="27"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="28"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="29"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="30"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="31"
+                android:textStyle="bold"/>
+
+            <TextView
+                style="@style/NumeroCalendario"
+                android:text="" />
+
+        </LinearLayout>
+
+
+        <!-- FECHA SELECCIONADA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:text="Martes, 6 de mayo"
+            android:textColor="#222222"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+
+        <!-- TARJETA DEL MENÚ -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@drawable/bg_menu"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <!-- IMAGEN -->
+            <ImageView
+                android:id="@+id/imgComida"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/comida"
+                android:contentDescription="Imagen del menú" />
+
+
+            <!-- INFORMACIÓN -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="12dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:text="• Arroz blanco"
+                    android:textColor="#222222"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:text="• Fríjoles"
+                    android:textColor="#222222"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:text="• Pollo guisado"
+                    android:textColor="#222222"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:text="• Ensalada de repollo"
+                    android:textColor="#222222"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="23dp"
+                    android:text="• Jugo natural"
+                    android:textColor="#222222"
+                    android:textSize="11sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/bg_etiqueta"
+                    android:gravity="center"
+                    android:paddingStart="7dp"
+                    android:paddingEnd="7dp"
+                    android:text="Menú seleccionado"
+                    android:textColor="#222222"
+                    android:textSize="8sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- BOTÓN -->
+        <Button
+            android:id="@+id/btnVerMenu"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_boton"
+            android:text="Ver menú del día"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            />
+
+        <Button
+            android:id="@+id/btnSugerencia"
+            android:layout_width="150dp"
+            android:layout_height="42dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_boton"
+            android:text="Sugerencia IA"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+</ScrollView>
