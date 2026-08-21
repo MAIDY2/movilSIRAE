@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F4F3EE">
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <FrameLayout
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- BARRA INFERIOR -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp"
+        android:clipChildren="false"
+        android:clipToPadding="false">
+
+        <!-- BARRA -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            android:background="@menu/bg_barra"
+            android:elevation="12dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp">
+
+            <!-- INICIO -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@menu/ic_home" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Inicio"
+                    android:textColor="#777777"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <!-- MENÚ -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@menu/ic_menu" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Menú"
+                    android:textColor="#777777"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+
+            <!-- ASISTENCIA -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@menu/ic_event" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Asistencia"
+                    android:textColor="#333333"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- PREPARACIÓN -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:src="@menu/ic_menu_book" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="Preparación"
+                    android:textColor="#FFC107"
+                    android:textSize="10sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <!-- MÁS -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@menu/ic_more_vert" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="Más"
+                    android:textColor="#777777"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

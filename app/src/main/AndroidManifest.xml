@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOVILSIRAE">
         <activity
+            android:name=".menuprincipall"
+            android:exported="false" />
+        <activity
             android:name=".inventarioDisponible"
             android:exported="false" />
         <activity
