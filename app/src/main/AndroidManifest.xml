@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOVILSIRAE">
         <activity
+            android:name=".inventarioDisponible"
+            android:exported="false" />
+        <activity
+            android:name=".cantidad"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
