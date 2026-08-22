@@ -19,7 +19,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".login"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,7 +32,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".menuprincipall"
+            android:name=".Menuprincipal"
             android:exported="false" />
 
         <activity
