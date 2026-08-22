@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOVILSIRAE">
         <activity
+            android:name=".guias_protocolos"
+            android:exported="false" />
+        <activity
+            android:name=".mas_opciones"
+            android:exported="false" />
+        <activity
             android:name=".seleccionar_menu"
             android:exported="false" />
         <activity

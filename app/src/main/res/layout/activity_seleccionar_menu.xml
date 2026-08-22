@@ -20,12 +20,12 @@
             android:orientation="horizontal">
 
             <TextView
-            android:layout_width="42dp"
-            android:layout_height="42dp"
-            android:gravity="center"
-            android:text=""
-            android:textColor="#333333"
-            android:textSize="30sp" />
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:gravity="center"
+                android:text="‹"
+                android:textColor="#333333"
+                android:textSize="30sp" />
 
             <TextView
                 android:layout_width="0dp"
