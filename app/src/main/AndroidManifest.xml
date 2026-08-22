@@ -19,15 +19,29 @@
             android:exported="false" />
 
         <activity
-            android:name=".LoginActivity"
+            android:name=".login"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+
+        <activity
+            android:name=".menuprincipall"
+            android:exported="false" />
+
+        <activity
+            android:name=".inventarioDisponible"
+            android:exported="false" />
+
+        <activity
+            android:name=".cantidad"
+            android:exported="false" />
 
         <activity
             android:name=".MainActivity"
