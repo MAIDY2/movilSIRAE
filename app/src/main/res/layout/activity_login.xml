@@ -87,170 +87,167 @@ android:layout_marginBottom="18dp"
 app:cardBackgroundColor="#FFFFFF"
 app:cardCornerRadius="18dp"
 app:cardElevation="3dp"
-app:strokeColor="#EEEEEE"
+app:strokeColor="#FFEB3B"
 app:strokeWidth="1dp">
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:orientation="vertical"
-android:paddingStart="15dp"
-android:paddingEnd="15dp"
-android:paddingTop="15dp"
-android:paddingBottom="16dp">
-
-<!-- TITULO -->
-
-<TextView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:gravity="center"
-android:text="Iniciar sesión"
-android:textColor="#222222"
-android:textSize="17sp"
-android:textStyle="bold" />
-
-<TextView
-android:layout_width="match_parent"
-android:layout_height="wrap_content"
-android:layout_marginTop="2dp"
-android:layout_marginBottom="13dp"
-android:gravity="center"
-android:text="Bienvenido de nuevo"
-android:textColor="#777777"
-android:textSize="9sp" />
+    <LinearLayout
+        android:layout_width="316dp"
+        android:layout_height="343dp"
+        android:orientation="vertical"
+        android:paddingStart="15dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="15dp"
+        android:paddingBottom="16dp">
 
 
-<!-- CORREO -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Iniciar sesión"
+            android:textColor="#222222"
+            android:textSize="17sp"
+            android:textStyle="bold" />
 
-<com.google.android.material.textfield.TextInputLayout
-android:id="@+id/layoutCorreo"
-android:layout_width="match_parent"
-android:layout_height="52dp"
-android:hint="Correo electrónico"
-app:boxBackgroundMode="outline"
-app:boxCornerRadiusBottomEnd="11dp"
-app:boxCornerRadiusBottomStart="11dp"
-app:boxCornerRadiusTopEnd="11dp"
-app:boxCornerRadiusTopStart="11dp"
-app:boxStrokeColor="#E0E0E0">
-
-<com.google.android.material.textfield.TextInputEditText
-android:id="@+id/txtCorreo"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:inputType="textEmailAddress"
-android:singleLine="true"
-android:textSize="10sp" />
-
-</com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="13dp"
+            android:gravity="center"
+            android:text="Bienvenido de nuevo"
+            android:textColor="#777777"
+            android:textSize="9sp" />
 
 
-<!-- ESPACIO -->
 
-<Space
-android:layout_width="match_parent"
-android:layout_height="8dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Correo electrónico"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="11dp"
+            app:boxCornerRadiusBottomStart="11dp"
+            app:boxCornerRadiusTopEnd="11dp"
+            app:boxCornerRadiusTopStart="11dp"
+            app:boxStrokeColor="#E0E0E0">
 
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtCorreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:singleLine="true"
+                android:textSize="10sp" />
 
-<!-- CONTRASEÑA -->
-
-<com.google.android.material.textfield.TextInputLayout
-android:id="@+id/layoutContrasena"
-android:layout_width="match_parent"
-android:layout_height="52dp"
-android:hint="Contraseña"
-app:boxBackgroundMode="outline"
-app:boxCornerRadiusBottomEnd="11dp"
-app:boxCornerRadiusBottomStart="11dp"
-app:boxCornerRadiusTopEnd="11dp"
-app:boxCornerRadiusTopStart="11dp"
-app:boxStrokeColor="#E0E0E0"
-app:endIconMode="password_toggle">
-
-<com.google.android.material.textfield.TextInputEditText
-android:id="@+id/txtContrasena"
-android:layout_width="match_parent"
-android:layout_height="match_parent"
-android:inputType="textPassword"
-android:singleLine="true"
-android:textSize="10sp" />
-
-</com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-<!-- RECORDAR / OLVIDÉ -->
 
-<LinearLayout
-android:layout_width="match_parent"
-android:layout_height="38dp"
-android:orientation="horizontal"
-android:gravity="center_vertical">
-
-<CheckBox
-android:id="@+id/checkRecordarme"
-android:layout_width="0dp"
-android:layout_height="wrap_content"
-android:layout_weight="1"
-android:buttonTint="#FFC800"
-android:text="Recordarme"
-android:textColor="#555555"
-android:textSize="8sp" />
-
-<TextView
-android:id="@+id/txtOlvide"
-android:layout_width="wrap_content"
-android:layout_height="wrap_content"
-android:clickable="true"
-android:focusable="true"
-android:text="¿Olvidaste tu contraseña?"
-android:textColor="#E4AD00"
-android:textSize="8sp"
-android:textStyle="bold" />
-
-</LinearLayout>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp" />
 
 
-<!-- BOTON -->
+        <!-- CONTRASEÑA -->
 
-<com.google.android.material.button.MaterialButton
-android:id="@+id/btnIngresar"
-android:layout_width="match_parent"
-android:layout_height="45dp"
-android:layout_marginTop="2dp"
-android:text="Iniciar sesión"
-android:textAllCaps="false"
-android:textColor="#FFFFFF"
-android:textSize="10sp"
-android:textStyle="bold"
-app:backgroundTint="#FFC800"
-app:cornerRadius="10dp" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutContrasena"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:hint="Contraseña"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusBottomEnd="11dp"
+            app:boxCornerRadiusBottomStart="11dp"
+            app:boxCornerRadiusTopEnd="11dp"
+            app:boxCornerRadiusTopStart="11dp"
+            app:boxStrokeColor="#FFEB3B"
+            app:endIconMode="password_toggle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:textSize="10sp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
 
 
-<!-- REGISTRO -->
+        <!-- RECORDAR / OLVIDÉ -->
 
-<TextView
-android:layout_width="match_parent"
-android:layout_height="28dp"
-android:layout_marginTop="6dp"
-android:gravity="center"
-android:text="¿No tienes cuenta?"
-android:textColor="#555555"
-android:textSize="8sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
 
-<TextView
-android:id="@+id/txtRegistro"
-android:layout_width="match_parent"
-android:layout_height="20dp"
-android:clickable="true"
-android:focusable="true"
-android:gravity="center"
-android:text="Regístrate aquí"
-android:textColor="#E4AD00"
-android:textSize="8sp"
-android:textStyle="bold" />
+            <CheckBox
+                android:id="@+id/checkRecordarme"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#FFC800"
+                android:text="Recordarme"
+                android:textColor="#555555"
+                android:textSize="8sp" />
 
-</LinearLayout>
+            <TextView
+                android:id="@+id/txtOlvide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="¿Olvidaste tu contraseña?"
+                android:textColor="#555555"
+                android:textSize="8sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- BOTON -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnIngresar"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="2dp"
+            android:text="Iniciar sesión"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:backgroundTint="#FFC800"
+            app:cornerRadius="10dp" />
+
+
+        <!-- REGISTRO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:layout_marginTop="6dp"
+            android:gravity="center"
+            android:text="¿No tienes cuenta?"
+            android:textColor="#555555"
+            android:textSize="8sp" />
+
+        <TextView
+            android:id="@+id/txtRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:text="Regístrate aquí"
+            android:textColor="#E4AD00"
+            android:textSize="8sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
 
 </com.google.android.material.card.MaterialCardView>
 

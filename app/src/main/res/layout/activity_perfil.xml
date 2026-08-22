@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F9FA"
+    android:fillViewport="true">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="20dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:orientation="horizontal"
+android:paddingBottom="16dp">
+
+<ImageView
+android:id="@+id/btnBack"
+android:layout_width="24dp"
+android:layout_height="24dp"
+android:contentDescription="Volver"
+android:src="@android:drawable/ic_menu_revert"
+app:tint="#333333" />
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:gravity="center"
+android:text="Perfil del Usuario"
+android:textColor="#1A1A1A"
+android:textSize="18sp"
+android:textStyle="bold" />
+
+<View
+android:layout_width="24dp"
+android:layout_height="24dp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center"
+android:orientation="vertical"
+android:paddingVertical="12dp">
+
+<ImageView
+android:id="@+id/imgAvatar"
+android:layout_width="120dp"
+android:layout_height="120dp"
+android:padding="12dp"
+android:src="@drawable/manipuladoragf">
+
+</ImageView>
+
+<TextView
+android:id="@+id/tvNombreCompleto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="Laura Gómez"
+android:textColor="#1A1A1A"
+android:textSize="20sp"
+android:textStyle="bold" />
+
+<TextView
+android:id="@+id/tvRol"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Jefe Manipuladora de Alimentos"
+android:textColor="#666666"
+android:textSize="14sp" />
+</LinearLayout>
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:cardBackgroundColor="#FFFFFF"
+app:cardCornerRadius="16dp"
+app:cardElevation="0dp"
+app:strokeColor="#FFC107"
+app:strokeWidth="2dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Información General"
+android:textColor="#FFB300"
+android:textSize="14sp"
+android:textStyle="bold" />
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:layout_marginVertical="10dp"
+android:background="#E0E0E0" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Sede Asignada"
+android:textColor="#888888"
+android:textSize="12sp" />
+
+<TextView
+android:id="@+id/tvSede"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="I.E. La Paz - Sede Principal"
+android:textColor="#1A1A1A"
+android:textSize="15sp"
+android:textStyle="bold" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="12dp"
+android:text="Documento de Identidad"
+android:textColor="#888888"
+android:textSize="12sp" />
+
+<TextView
+android:id="@+id/tvDocumento"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="C.C. 1.061.890.123"
+android:textColor="#1A1A1A"
+android:textSize="15sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="12dp"
+android:text="Teléfono / Celular"
+android:textColor="#888888"
+android:textSize="12sp" />
+
+<TextView
+android:id="@+id/tvTelefono"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="+57 312 456 7890"
+android:textColor="#1A1A1A"
+android:textSize="15sp" />
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+android:layout_marginBottom="8dp"
+android:text="Ajustes de Cuenta"
+android:textColor="#888888"
+android:textSize="13sp"
+android:textStyle="bold" />
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+app:cardBackgroundColor="#FFFFFF"
+app:cardCornerRadius="16dp"
+app:cardElevation="0dp"
+app:strokeColor="#FFC107"
+app:strokeWidth="2dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingHorizontal="16dp"
+android:paddingVertical="8dp">
+
+<LinearLayout
+android:id="@+id/optionEditarPerfil"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?attr/selectableItemBackground"
+android:gravity="center_vertical"
+android:paddingVertical="14dp">
+
+<ImageView
+android:layout_width="24dp"
+android:layout_height="24dp"
+android:src="@android:drawable/ic_menu_edit"
+app:tint="#666666" />
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_weight="1"
+android:text="Editar datos personales"
+android:textColor="#333333"
+android:textSize="15sp" />
+
+<ImageView
+android:layout_width="20dp"
+android:layout_height="20dp"
+android:src="@android:drawable/ic_media_play"
+app:tint="#CCCCCC" />
+</LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#E0E0E0" />
+
+<LinearLayout
+android:id="@+id/optionCambiarClave"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?attr/selectableItemBackground"
+android:gravity="center_vertical"
+android:paddingVertical="14dp">
+
+<ImageView
+android:layout_width="24dp"
+android:layout_height="24dp"
+android:src="@android:drawable/ic_lock_lock"
+app:tint="#666666" />
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_weight="1"
+android:text="Cambiar contraseña"
+android:textColor="#333333"
+android:textSize="15sp" />
+
+<ImageView
+android:layout_width="20dp"
+android:layout_height="20dp"
+android:src="@android:drawable/ic_media_play"
+app:tint="#CCCCCC" />
+</LinearLayout>
+
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#E0E0E0" />
+
+<LinearLayout
+android:id="@+id/optionCarne"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="?attr/selectableItemBackground"
+android:gravity="center_vertical"
+android:paddingVertical="14dp">
+
+<ImageView
+android:layout_width="24dp"
+android:layout_height="24dp"
+android:src="@android:drawable/ic_menu_agenda"
+app:tint="#666666" />
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_marginStart="16dp"
+android:layout_weight="1"
+android:text="Carné de manipulación de alimentos"
+android:textColor="#333333"
+android:textSize="15sp" />
+
+<ImageView
+android:layout_width="20dp"
+android:layout_height="20dp"
+android:src="@android:drawable/ic_media_play"
+app:tint="#CCCCCC" />
+</LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,15 +1,17 @@
-        package com.example.loginn
+package com.example.loginn
 
-        import android.os.Bundle
-        import android.widget.Toast
-        import androidx.appcompat.app.AppCompatActivity
-        import com.example.movil_sirae.databinding.ActivityLoginBinding
+import android.content.Intent
+import android.os.Bundle
+import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.example.movil_sirae.databinding.ActivityLoginBinding
+import com.example.movil_sirae.dashboard
 
-        class LoginActivity : AppCompatActivity() {
+class LoginActivity : AppCompatActivity() {
 
-        private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityLoginBinding
 
-        override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         binding = ActivityLoginBinding.inflate(layoutInflater)
@@ -38,26 +40,24 @@
             if (esValido) {
                 Toast.makeText(
                     this,
-                    "Datos ingresados correctamente",
+                    "Bienvenido",
                     Toast.LENGTH_SHORT
                 ).show()
+
+                // Redirección directa usando la clase dashboard
+                val intent = Intent(this, dashboard::class.java)
+                intent.putExtra("USER_EMAIL", correo)
+                startActivity(intent)
+                finish()
             }
         }
 
         binding.txtOlvide.setOnClickListener {
-            Toast.makeText(
-                this,
-                "Recuperar contraseña",
-                Toast.LENGTH_SHORT
-            ).show()
+            Toast.makeText(this, "Recuperar contraseña", Toast.LENGTH_SHORT).show()
         }
 
         binding.txtRegistro.setOnClickListener {
-            Toast.makeText(
-                this,
-                "Registro de usuario",
-                Toast.LENGTH_SHORT
-            ).show()
-           }
-          }
+            Toast.makeText(this, "Registro de usuario", Toast.LENGTH_SHORT).show()
         }
+    }
+}
