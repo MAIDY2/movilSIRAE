@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Cuando se presiona -->
+    <item android:state_pressed="true">
+
+        <shape>
+
+            <solid android:color="#FFF8E1" />
+
+            <stroke
+                android:width="2dp"
+                android:color="#FFC107" />
+
+            <corners android:radius="10dp" />
+
+        </shape>
+
+    </item>
+
+    <!-- Estado normal -->
+    <item>
+
+        <shape>
+
+            <solid android:color="#FFFFFF" />
+
+            <stroke
+                android:width="2dp"
+                android:color="#65A83F"
+                />
+
+            <corners android:radius="10dp" />
+
+        </shape>
+
+    </item>
+
+</selector>
