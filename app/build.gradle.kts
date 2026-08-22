@@ -5,12 +5,22 @@ plugins {
 
 android {
     namespace = "com.example.movil_sirae"
+<<<<<<< HEAD
     compileSdk = 36
+=======
+    compileSdk {
+        version = release(36)
+    }
+    buildFeatures {
+        viewBinding = true
+
+    }
+>>>>>>> origin/desarrollo
 
     defaultConfig {
         applicationId = "com.example.movil_sirae"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 

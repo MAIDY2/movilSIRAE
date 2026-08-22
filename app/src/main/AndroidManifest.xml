@@ -44,6 +44,14 @@
             android:exported="false" />
 
         <activity
+            android:name=".seleccionar_menu"
+            android:exported="false" />
+
+        <activity
+            android:name=".sugerencia_de_ia"
+            android:exported="false" />
+
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
 
