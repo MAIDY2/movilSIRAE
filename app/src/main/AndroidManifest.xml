@@ -12,7 +12,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MOVILSIRAE">
         <activity
+            android:name=".seleccionar_menu"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".sugerencia_de_ia"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

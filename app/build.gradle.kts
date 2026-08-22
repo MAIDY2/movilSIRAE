@@ -8,11 +8,15 @@ android {
     compileSdk {
         version = release(36)
     }
+    buildFeatures {
+        viewBinding = true
+
+    }
 
     defaultConfig {
         applicationId = "com.example.movil_sirae"
         minSdk = 24
-        targetSdk = 36
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -38,6 +42,7 @@ android {
 }
 
 dependencies {
+    implementation(libs.androidx.activity.ktx)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
