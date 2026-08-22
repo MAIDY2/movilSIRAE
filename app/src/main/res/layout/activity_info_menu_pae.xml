@@ -355,4 +355,8 @@
         </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
+    <include
+        layout="@layout/activity_menu"
+        android:layout_width="match_parent"
+        android:layout_height="95dp" />
 </LinearLayout>
