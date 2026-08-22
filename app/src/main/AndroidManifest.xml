@@ -11,43 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MOVILSIRAE">
-
-        <!-- CALENDARIO -->
-        <activity
-            android:name=".CalendarioActivity"
-            android:exported="false" />
-
-        <!-- DASHBOARD = INICIO DE LA APP -->
         <activity
             android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".menuprincipall"
+            android:exported="false" />
+        <activity
+            android:name=".inventarioDisponible"
+            android:exported="false" />
+        <activity
+            android:name=".cantidad"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
-        <!-- OTRAS PANTALLAS -->
-        <activity
-            android:name=".menuprincipall"
-            android:exported="false" />
-
-        <activity
-            android:name=".inventarioDisponible"
-            android:exported="false" />
-
-        <activity
-            android:name=".cantidad"
-            android:exported="false" />
-
-        <!-- MAIN YA NO ES EL INICIO -->
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
-
     </application>
 
 </manifest>
