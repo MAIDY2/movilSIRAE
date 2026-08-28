@@ -1,11 +1,10 @@
-package com.example.loginn
+package com.example.movil_sirae
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.movil_sirae.databinding.ActivityLoginBinding
-import com.example.movil_sirae.dashboard
 
 class LoginActivity : AppCompatActivity() {
 
@@ -44,7 +43,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.LENGTH_SHORT
                 ).show()
 
-                // Redirección directa usando la clase dashboard
+                // Redirección directa a la actividad dashboard
                 val intent = Intent(this, dashboard::class.java)
                 intent.putExtra("USER_EMAIL", correo)
                 startActivity(intent)

@@ -14,11 +14,59 @@
         android:theme="@style/Theme.MaterialComponents.DayNight.NoActionBar"
         tools:targetApi="31">
         <activity
+            android:name=".activity_consumo"
+            android:exported="false" />
+        <activity
+            android:name=".activity_perfil_supervisor"
+            android:exported="false" />
+        <activity
+            android:name=".dahsboard"
+            android:exported="false" />
+        <activity
+            android:name=".CalendarioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".cantidad"
+            android:exported="false" />
+        <activity
+            android:name=".CATEGRIAS_SUPERV"
+            android:exported="false" />
+        <activity
+            android:name=".dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".InfoMenuPae"
+            android:exported="false" />
+        <activity
+            android:name=".inventarioDisponible"
+            android:exported="false" />
+        <activity
+            android:name=".loginSUPERVISOR"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Menuprincipal"
+            android:exported="false" />
+        <activity
             android:name=".perfil"
             android:exported="false" />
         <activity
-            android:name=".PreparacionActivity"
+            android:name=".preparacion"
             android:exported="false" />
+        <activity
+            android:name=".RegistroPreparacion"
+            android:exported="false" />
+        <activity
+            android:name=".reportes"
+            android:exported="false" />
+        <activity
+            android:name=".seleccionar_menu"
+            android:exported="false" />
+        <activity
+            android:name=".sugerencia_de_ia"
+            android:exported="false" /> <!-- Activity Principal (Pantalla de inicio) -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
@@ -28,27 +76,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".dashboard"
-            android:exported="false" />
-        <activity
-            android:name=".Menuprincipal"
-            android:exported="false" />
-        <activity
-            android:name=".inventarioDisponible"
-            android:exported="false" />
-        <activity
-            android:name=".cantidad"
-            android:exported="false" />
-        <activity
-            android:name=".seleccionar_menu"
-            android:exported="false" />
-        <activity
-            android:name=".sugerencia_de_ia"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
     </application>
 
 </manifest>

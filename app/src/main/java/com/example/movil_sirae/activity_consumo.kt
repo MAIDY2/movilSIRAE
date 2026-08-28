@@ -1,20 +1,45 @@
 package com.example.movil_sirae
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class activity_consumo : AppCompatActivity() {
+
+    private lateinit var btnBack: ImageView
+    private lateinit var tvConsumoHoy: TextView
+    private lateinit var tvBajoStock: TextView
+    private lateinit var tvCriticos: TextView
+    private lateinit var tvProximaEntrega: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_consumo)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        initViews()
+        setupListeners()
+        loadDashboardData()
+    }
+    private fun initViews() {
+        btnBack = findViewById(R.id.btnBack)
+        tvConsumoHoy = findViewById(R.id.tvConsumoHoy)
+        tvBajoStock = findViewById(R.id.tvBajoStock)
+        tvCriticos = findViewById(R.id.tvCriticos)
+        tvProximaEntrega = findViewById(R.id.tvProximaEntrega)
+    }
+
+    private fun setupListeners() {
+        btnBack.setOnClickListener {
+            finish()
         }
+    }
+
+    private fun loadDashboardData() {
+        tvConsumoHoy.text = "54 Kg"
+        tvBajoStock.text = "5"
+        tvCriticos.text = "12"
+        tvProximaEntrega.text = "2 días"
     }
 }

@@ -1,10 +1,392 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".activity_perfil_supervisor">
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F4F5F7">
+
+<!-- FONDO DE ONDA AMARILLA SUPERIOR -->
+<com.google.android.material.card.MaterialCardView
+android:id="@+id/waveBackground"
+android:layout_width="0dp"
+android:layout_height="220dp"
+android:layout_marginTop="-30dp"
+app:cardBackgroundColor="#FFC107"
+app:cardCornerRadius="40dp"
+app:cardElevation="0dp"
+app:strokeWidth="0dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<!-- ONDA SECUNDARIA -->
+<com.google.android.material.card.MaterialCardView
+android:layout_width="200dp"
+android:layout_height="200dp"
+android:layout_marginEnd="-50dp"
+android:layout_marginTop="-50dp"
+app:cardBackgroundColor="#FFD54F"
+app:cardCornerRadius="100dp"
+app:cardElevation="0dp"
+app:strokeWidth="0dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<androidx.core.widget.NestedScrollView
+android:layout_width="0dp"
+android:layout_height="0dp"
+android:fillViewport="true"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:paddingHorizontal="20dp"
+android:paddingTop="24dp"
+android:paddingBottom="32dp">
+
+<!-- CABECERA DE LA PÁGINA -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:orientation="horizontal">
+
+<ImageView
+android:id="@+id/btnBack"
+android:layout_width="28dp"
+android:layout_height="28dp"
+android:layout_marginEnd="12dp"
+android:contentDescription="Atrás"
+android:src="@android:drawable/ic_menu_revert"
+app:tint="#212121" />
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Perfil Supervisor"
+android:textColor="#212121"
+android:textSize="22sp"
+android:textStyle="bold" />
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="40dp"
+android:layout_height="40dp"
+app:cardBackgroundColor="#2E7D32"
+app:cardCornerRadius="20dp"
+app:cardElevation="2dp"
+app:strokeWidth="0dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:text="EP"
+android:textColor="#FFFFFF"
+android:textSize="14sp"
+android:textStyle="bold" />
+</com.google.android.material.card.MaterialCardView>
+</LinearLayout>
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="20dp"
+app:cardBackgroundColor="#FFFFFF"
+app:cardCornerRadius="16dp"
+app:cardElevation="4dp"
+app:strokeWidth="0dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:gravity="center_vertical"
+android:orientation="horizontal"
+android:padding="16dp">
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="56dp"
+android:layout_height="56dp"
+app:cardBackgroundColor="#FFC107"
+app:cardCornerRadius="28dp"
+app:cardElevation="0dp"
+app:strokeWidth="0dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:text="CM"
+android:textColor="#FFFFFF"
+android:textSize="20sp"
+android:textStyle="bold" />
+</com.google.android.material.card.MaterialCardView>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginStart="14dp"
+android:orientation="vertical">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="EL PEPE"
+android:textColor="#212121"
+android:textSize="16sp"
+android:textStyle="bold" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="2dp"
+android:text="camilo.munoz@gmail.com"
+android:textColor="#757575"
+android:textSize="12sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="2dp"
+android:text="Supervisor PAE"
+android:textColor="#2E7D32"
+android:textSize="12sp"
+android:textStyle="bold" />
+</LinearLayout>
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:cardBackgroundColor="#FFFFFF"
+app:cardCornerRadius="16dp"
+app:cardElevation="4dp"
+app:strokeWidth="0dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Información Personal"
+android:textColor="#212121"
+android:textSize="15sp"
+android:textStyle="bold" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="12dp"
+android:text="Nombre Completo"
+android:textColor="#757575"
+android:textSize="11sp" />
+
+<EditText
+android:id="@+id/etNombre"
+android:layout_width="match_parent"
+android:layout_height="44dp"
+android:layout_marginTop="4dp"
+android:background="#F8F9FA"
+android:inputType="textPersonName"
+android:paddingHorizontal="12dp"
+android:text="Camilo Muñoz"
+android:textColor="#212121"
+android:textSize="14sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="Correo Electrónico"
+android:textColor="#757575"
+android:textSize="11sp" />
+
+<EditText
+android:id="@+id/etCorreo"
+android:layout_width="match_parent"
+android:layout_height="44dp"
+android:layout_marginTop="4dp"
+android:background="#F8F9FA"
+android:inputType="textEmailAddress"
+android:paddingHorizontal="12dp"
+android:text="camilo.munoz@gmail.com"
+android:textColor="#212121"
+android:textSize="14sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="Teléfono"
+android:textColor="#757575"
+android:textSize="11sp" />
+
+<EditText
+android:id="@+id/etTelefono"
+android:layout_width="match_parent"
+android:layout_height="44dp"
+android:layout_marginTop="4dp"
+android:background="#F8F9FA"
+android:inputType="phone"
+android:paddingHorizontal="12dp"
+android:text="+57 312 345 6789"
+android:textColor="#212121"
+android:textSize="14sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginTop="10dp"
+android:text="Ubicación"
+android:textColor="#757575"
+android:textSize="11sp" />
+
+<EditText
+android:id="@+id/etUbicacion"
+android:layout_width="match_parent"
+android:layout_height="44dp"
+android:layout_marginTop="4dp"
+android:background="#F8F9FA"
+android:inputType="text"
+android:paddingHorizontal="12dp"
+android:text="Popayán, Cauca"
+android:textColor="#212121"
+android:textSize="14sp" />
+
+<com.google.android.material.button.MaterialButton
+android:id="@+id/btnGuardar"
+android:layout_width="match_parent"
+android:layout_height="46dp"
+android:layout_marginTop="16dp"
+android:backgroundTint="#FFC107"
+android:text="Guardar Cambios"
+android:textAllCaps="false"
+android:textColor="#212121"
+android:textSize="14sp"
+android:textStyle="bold"
+app:cornerRadius="10dp" />
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+<com.google.android.material.card.MaterialCardView
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="16dp"
+app:cardBackgroundColor="#FFFFFF"
+app:cardCornerRadius="16dp"
+app:cardElevation="4dp"
+app:strokeWidth="0dp">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+android:padding="16dp">
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Actividades Recientes"
+android:textColor="#1976D2"
+android:textSize="15sp"
+android:textStyle="bold" />
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="12dp"
+android:orientation="vertical">
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:background="#F8F9FA"
+android:gravity="center_vertical"
+android:padding="10dp">
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Cierre de entrega de alimentos"
+android:textColor="#212121"
+android:textSize="12sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="09:30 AM"
+android:textColor="#757575"
+android:textSize="11sp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="6dp"
+android:background="#F8F9FA"
+android:gravity="center_vertical"
+android:padding="10dp">
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Revisión de inventario crítico"
+android:textColor="#212121"
+android:textSize="12sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Ayer"
+android:textColor="#757575"
+android:textSize="11sp" />
+</LinearLayout>
+
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginTop="6dp"
+android:background="#F8F9FA"
+android:gravity="center_vertical"
+android:padding="10dp">
+
+<TextView
+android:layout_width="0dp"
+android:layout_height="wrap_content"
+android:layout_weight="1"
+android:text="Actualización de datos"
+android:textColor="#212121"
+android:textSize="12sp" />
+
+<TextView
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="24 Ago"
+android:textColor="#757575"
+android:textSize="11sp" />
+</LinearLayout>
+
+</LinearLayout>
+
+</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
+</androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

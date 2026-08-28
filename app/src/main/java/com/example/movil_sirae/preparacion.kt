@@ -5,7 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.movil_sirae.databinding.ActivityPreparacionBinding
 
-class PreparacionActivity : AppCompatActivity() {
+class preparacion : AppCompatActivity() {
 
     private lateinit var binding: ActivityPreparacionBinding
 
